@@ -6,4 +6,4 @@
 
 ---
 
-Planned open-source release: April 2025. Stay tuned!
+Planned open-source release: May-June 2025. Stay tuned!
