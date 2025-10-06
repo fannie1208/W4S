@@ -8,7 +8,7 @@
 
 ## Framework Overview
 
-![W4S Framework](visual/framework.pdf)
+![W4S Framework](visual/framework.png)
 
 Our W4S framework operates as an iterative process of workflow generation, execution, and refinement:
 
