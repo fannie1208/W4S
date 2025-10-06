@@ -8,3 +8,4 @@ results/
 *.pywz
 *.pyzw
 *.pyz
+.env
