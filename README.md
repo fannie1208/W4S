@@ -6,17 +6,36 @@
 
 ---
 
+## Framework Overview
+
+![W4S Framework](visual/framework.pdf)
+
+Our W4S framework operates as an iterative process of workflow generation, execution, and refinement:
+
+1. **Workflow Generation**: The weak meta-agent design a new workflow to leverage the given strong model, represented as executable Python code.
+2. **Execution and Feedback.**: The generated workflow is executed by a strong model on validation samples, producing performance feedback.
+3. **Refinement**: The meta-agent uses feedback to iteratively improve the workflow.
+
+
 ## Install
-Store your API keys in `key.ev`:
+Store your API keys in `key.env`:
 ```
 OPENAI_API_KEY=""
 ANTHROPIC_API_KEY=""
 ```
-Then install the environment:
+
+### Basic Installation (default)
 ```
 conda create -n w4s python=3.11
 conda activate w4s
-pip install -r requirements.txt
+pip install .
+```
+
+### Installation with vLLM + training support
+```
+conda create -n w4s python=3.11
+conda activate w4s
+pip install .[vllm]
 ```
 
 ---

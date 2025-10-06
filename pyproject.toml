@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "w4s"
+version = "0.1.0"
+description = "W4S Framework"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "tqdm",
+    "pandas",
+    "openai",
+    "backoff",
+    "scipy",
+    "blobfile",
+    "tree_sitter",
+    "tree_sitter_python",
+    "anthropic",
+    "dotenv",
+    "requests",
+    "tenacity"
+]
+
+[project.optional-dependencies]
+vllm = [
+    "trl",
+    "vllm",
+]
